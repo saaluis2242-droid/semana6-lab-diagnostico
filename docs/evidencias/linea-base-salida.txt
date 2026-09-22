@@ -1,0 +1,36 @@
+----- LB-01 NORMAL valida -----
+Entrada: id=R-101 correo=carlos@uees.edu.ec inicio=2026-09-25T10:00 fin=2026-09-25T11:00 tipo=NORMAL horasAnticipacion=5
+Guardando reserva R-101
+Correo enviado a carlos@uees.edu.ec
+Retorno (sin excepcion): 40.0
+Estado final: CONFIRMADA
+
+----- LB-02 VIP valida -----
+Entrada: id=R-102 correo=ana@uees.edu.ec inicio=2026-09-25T10:00 fin=2026-09-25T11:00 tipo=VIP horasAnticipacion=5
+Guardando reserva R-102
+Correo enviado a ana@uees.edu.ec
+Retorno (sin excepcion): 34.0
+Estado final: CONFIRMADA
+
+----- LB-03 correo invalido -----
+Entrada: id=R-103 correo=carlos-uees.edu.ec inicio=2026-09-25T10:00 fin=2026-09-25T11:00 tipo=NORMAL horasAnticipacion=5
+Retorno (sin excepcion): 0.0
+Estado final: PENDIENTE
+
+----- LB-04 periodo invalido (fin no posterior a inicio) -----
+Entrada: id=R-104 correo=carlos@uees.edu.ec inicio=2026-09-25T10:00 fin=2026-09-25T10:00 tipo=NORMAL horasAnticipacion=5
+Retorno (sin excepcion): 0.0
+Estado final: PENDIENTE
+
+----- LB-05 limite valido 2h -----
+Entrada: id=R-105 correo=carlos@uees.edu.ec inicio=2026-09-25T10:00 fin=2026-09-25T11:00 tipo=NORMAL horasAnticipacion=2
+Guardando reserva R-105
+Correo enviado a carlos@uees.edu.ec
+Retorno (sin excepcion): 40.0
+Estado final: CONFIRMADA
+
+----- LB-06 limite invalido 1h -----
+Entrada: id=R-106 correo=carlos@uees.edu.ec inicio=2026-09-25T10:00 fin=2026-09-25T11:00 tipo=NORMAL horasAnticipacion=1
+Retorno (sin excepcion): 0.0
+Estado final: PENDIENTE
+
